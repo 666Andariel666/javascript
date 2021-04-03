@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(19, 1, 1);
+}
+
+button {
+    min-width: 20vw;
+    min-height: 5vh;
+    background: rgb(63, 0, 0);
+    color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+    margin: 1px;
+    transition: 500ms;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    color: red;
+    background: black;
+}
+
+.morse-enter_container {
+    background: black;
+    width: 100%;
+    min-height: 50vh;
+    display: none;
+    visibility: hidden;
+    border: 1px rgb(0, 255, 34) solid;
+    transition: 500ms;
+}
+
+.active {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+}
+
+.eng-out {
+    color: rgb(0, 255, 34);
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 1px rgb(0, 255, 34) solid;
+    min-height: 50vh;
+}
+
+.morse-enter_input {
+    height: 50vh;
+    background: #000;
+    border: 1px rgb(0, 255, 34) solid;
+    color: rgb(0, 255, 34);
+    outline: none;
+    font-size: 50px;
+    text-align: center;
+}
